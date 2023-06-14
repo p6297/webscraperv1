@@ -19,7 +19,7 @@ const GetFormulOneDrivers = async() => {
         const data = [];
         $(".listing-items--wrapper > .row > .col-12").map((index,elements)=> { //grabs the elements and iterinng through them.
 
-            //accessing datas through claassnames
+            //accessing datas by grabbing classnames
             const rank = $(elements).find(".rank").text();
             const points = $(elements).find(".points > .f1-wide--s ").text();
             const firstName = $(elements).find(".listing-item--name span:first").text();
